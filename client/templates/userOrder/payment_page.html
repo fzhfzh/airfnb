@@ -1,0 +1,56 @@
+<template name="paymentPage">
+<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no, user-scalable=0"/>
+
+<img src={{foodImage}}>
+
+<img class="center-block payment-img" src="/payments.jpg">
+<h4 class="payment-text">Pay with a card</h4>
+
+  <div class="payment-cfmbtn">
+      <span><button class="center-block input-field waves-effect waves-light btn-large button" id="addCCButton">Add Credit Card</button></span>
+  </div>
+
+<section class="payment-cardnum row">
+  <div class="col-md-3 col-xs-3 payment-cardnum"></div>
+    <span class="col-md-6 col-xs-6">
+        <select id="creditCardSelect">
+          {{{creditCards}}}
+        </select>
+      </span>
+  <div class="col-md-3 col-xs-3"></div> 
+</section>
+  
+   <div class="payment-cfmbtn row">
+    <button class="input-field waves-effect waves-light btn-large button" id="payButton">
+      Confirm Order
+    </button>
+  </div>
+  
+<div class="payment-cfmbtn row">
+    <h6>Powered by</h6>
+    <img style="width: 100px; height: auto;" src="/payeezy.png">
+  </div>
+
+<div id="newCardModal" class="modal">
+  <div class="modal-content">
+    <h4 style="text-align:center">Add Credit Card</h4>
+    <form>
+      <div class="row">
+        <div class="input-field">
+          <input id="cardNumberText" type="text" placeholder="1234 5678 9012 3456">
+          <label for="messageText">Card Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field">
+          <textarea id="cvvcode" class="materialize-textarea"></textarea>
+          <label for="messageText">CVV</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="confirmCC" target="newCardModal" class="modal-action modal-close waves-effect waves-green btn-flat">Add Card</a>
+  </div>
+</div>
+</template>

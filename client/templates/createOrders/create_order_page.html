@@ -1,0 +1,87 @@
+<template name="createOrderPage">
+<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no, user-scalable=0"/>
+
+<div class="logincook-top">
+	<h3>Upload / create a meal</h3>
+	<section class="logincook-create">
+		<form action="#" class="col s12">
+      <div class="item item-body" style="text-align:center;">
+        <button data-tap-disabled="true" id="imageUploadButton" class="btn waves-effect waves-light button button-block button-positive button-clear button-small">Change</button>
+        <img src="{{foodImage}}" height="200" width="200" id="imageUploadButton" style="border-radius: 20%;">
+      </div>
+			
+
+			<div class="row createorder-basics">
+				<div class="input-field col s4">
+					<i class="fa fa-user fa-4x prefix"></i>
+					<input id="icon_prefix" type="text" class="validate">
+					<label for="icon_prefix">Name of dish</label>
+				</div>
+				<div class="input-field col s4">
+					<i class="fa fa-dollar fa-4x prefix"></i>
+					<input id="icon_price" type="text" class="validate">
+					<label for="icon_price">Price</label>
+				</div>
+				<div class="input-field col s4">
+					<i class="fa fa-cutlery fa-4x prefix"></i>
+					<input id="icon_dining" type="text" class="validate">
+					<label for="icon_dining">Max. Num of Servings</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+    				<select id="orderEndHour">
+    					<option value="" disabled selected>Hour</option>
+    					<option value="8">8am</option>
+    					<option value="12">12pm</option>
+    					<option value="16">4pm</option>
+    				</select>
+    				<label>Orders close by: </label>
+    			</div>
+    			<div class="input-field col s6">
+					<input id="dateStart" type="date" class="datepicker" placeholder="Pick a date">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+    				<select id="collectStartHour">
+    					<option value="" disabled selected>Hour</option>
+    					<option value="12">12pm</option>
+    					<option value="15">3pm</option>
+    					<option value="17">5pm</option>
+    				</select>
+    				<label>Collect from: </label>
+    			</div>
+    				<div class="input-field col s6">
+    				<select id="collectEndHour">
+    					<option value="" disabled selected>Hour</option>
+    					<option value="14">2pm</option>
+    					<option value="17">5pm</option>
+    					<option value="19">7pm</option>
+    				</select>
+    				<label>To: </label>
+    			</div>
+			</div>
+
+			<button class="btn waves-effect waves-light" name="action" id="createOrder">Create<i class="fa fa-send fa-4x right"></i>
+
+			</button>
+		</form>
+	</section>
+</div>
+
+
+<div id="imageActionModal" class="modal bottom-sheet">
+  <div class="modal-footer">
+    <a href="#!" style="display:block; margin: 0 auto; text-align:center;" id="addImageFromCamera" class="modal-action modal-close wave-effect waves-green"><i class="material-icons prefix fa fa-camera"></i>Take Photo</a>
+    <a href="#!" style="display:block; margin: 0 auto; text-align:center;" id="addImageFromFile" class="modal-action modal-close wave-effect waves-green"><i class="material-icons prefix fa fa-folder-open"></i>Upload Existing</a>
+  </div>
+</div>
+
+<div style="position:absolute;top:-100px;">
+  <input type="file" accept="image/*" id="fileInput" name="fileInput"/>
+</div>
+
+</template>

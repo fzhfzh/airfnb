@@ -1,0 +1,376 @@
+/* CSS declarations go here */
+@font-face {
+	font-family: 'myFont';
+	src: url('font/HelveticaNeue-UltraLight.eot');
+	src: url('font/HelveticaNeue-UltraLight.woff') format('woff'),
+		 url('font/HelveticaNeue-UltraLight.ttf') format('truetype'),
+		 url('font/HelveticaNeue-UltraLight.svg') format('svg');
+}
+/* CSS declarations go here 
+background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+*/
+
+.login {
+  font-family: 'myFont';
+  background: url(veggies.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  font-family: 'myFont';
+  background: url(family.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.insightics img {
+	width: 100%;
+}
+
+/*
+
+*/
+
+.createorder-basics input {
+	padding-bottom: 30px;
+}
+
+/*
+	LOGIN
+*/
+
+.login {
+	font-family: 'myFont';
+	margin-top: 250px;
+}
+
+.inputfields {
+	text-align: center;
+}
+
+.inputfields input {
+	padding: 5px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	outline: none;
+	text-align: center;
+	border-radius: 20px;
+	width: 70%;
+}
+
+.inputfields img {
+	width: 60px;
+	height: 60px;
+}
+
+.inputfields img {
+	background-color: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   font-weight: bold;
+   padding: 0px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+   font-weight: bolder;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black; 
+   font-weight: bolder;
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+   font-weight: bolder;
+      padding: 0px;
+
+}
+/*
+	NAVBAR
+*/
+.navbarside img {
+	width: 100px;
+	height: auto;
+}
+
+.navbartop img {
+	width: 60px;
+	height: auto;
+}
+
+li#profilePage.navbartop {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbarside li {
+	list-style-type: none;
+	color: black;
+	font-family: 'myFont';
+	font-size: 18px;	
+	padding: 5px;
+	padding-right: 5px;
+}
+
+.navbar {
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+.navbar ul {
+	margin-top: 10px;
+}
+
+.navbar li {
+	list-style-type: none;
+	color: black;
+	font-family: 'myFont';
+	font-size: 18px;
+	padding: 5px;	
+	display: inline;
+}	
+
+.pull-right {
+	padding-right: 15px;
+}
+
+.homeWelcome {
+	text-align: center;
+	color: white;
+}
+
+.homeToLogin {
+	color: white;
+	text-align: center;
+	height: 100%;
+}
+
+.home-right, .home-left {
+	width: 48%;
+	height: 60%;
+	margin: 10px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*
+	LOGIN PAGE
+*/
+.logincook-bottom {
+	height: 500px;
+	overflow: scroll;
+}
+
+/*
+	USER LOGIN PAGE
+
+.userlogin-main {
+	text-align: center;
+	margin-top: 80px; 
+}
+
+.userlogin-main p {
+	font-size: 30px;
+	line-height: 80%;
+}
+
+.userlogin-input {
+	text-align: center;
+}
+
+.userlogin-input input {
+	padding: 2px;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	outline: none;
+	text-align: center;
+	border-radius: 20px;
+	width: 40%;
+}
+
+
+
+.navsidebar {
+	color: black;
+}
+*/
+.dropdown-content img {
+	width: 64px;
+	height: auto;
+}
+
+.nav-wrapper img {
+	width: 100px;
+}
+
+.nav-wrapper p {
+	padding-left: 20px; 
+}
+
+.nav-wrapper ul {
+	width: 100%;
+}
+
+.nav-wrapper li {
+	font-size: 18px;
+	font-family: 'myFont';
+	padding-right: 30px;
+	padding-left: 10px;
+	text-align: center;
+	display: inline;
+	display: block;
+	display: inline-block;
+}
+
+.userlogin-navbar ul {
+		float: right;
+		display: inline;
+}
+
+.userlogin-navbar li {
+	list-style-type: none;
+	display: inline;
+	display: block;
+}
+
+.menu li {
+	float: right;
+}
+
+.menu a {
+	color: black;
+	text-align: center;
+}
+
+.menu a:hover {
+	text-decoration: none;
+}
+
+.card img {
+	height: 350px;
+	padding-bottom: 10px; 
+}
+
+.card-content ul {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.card-content li {
+	font-size: 15px;
+	line-height: 110%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.card-review {
+	display: inline-block;
+}
+
+.card-reveal img {
+	height: 50px;
+	width: auto;
+}
+
+.cardreview-title.card-title {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+/*
+	PROFILE PAGE
+*/
+.dropdown-button img {
+	width: 100px;
+}
+
+/*
+	USER COOK
+*/
+.usercook-table {
+	table-layout: fixed;
+	height: 500px;
+	width: 100%;
+	background-color: #808080;
+}
+
+.usercook-table img {
+	width: 30%;
+	margin: auto;
+}
+
+.usercook-table td {
+	border: 4px solid white;
+	width: 100%;
+	text-align: center;
+}
+
+.usercook-table a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+/*
+	PAYMENT PAGE
+*/
+.payment-text {
+	font-family: 'myFont';
+	color: white;
+	height: 50%;
+	text-align: center;
+	background-color: #EA555E;
+}
+
+.payment-cardnum {
+	padding-top: 20px;
+}
+
+.payment-cfmbtn {
+	text-align: center;	
+}
+
+.payment-select {
+	width: 70%;
+}
+
+.payment-img {
+	width: 50%;
+	height: auto;
+}
